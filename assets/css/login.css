@@ -13,6 +13,10 @@
     font-family: "Poppins", serif;
 }
 
+body{
+    width: 100%;
+}
+
 /* Navbar Container */
 nav {
     display: flex;
@@ -55,6 +59,58 @@ nav {
 
 .navitems ul li a:hover {
     color: yellow;
+}
+
+/* login */
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background-image: url("https://t4.ftcdn.net/jpg/01/19/11/55/360_F_119115529_mEnw3lGpLdlDkfLgRcVSbFRuVl6sMDty.jpg");
+    opacity: 0.3; */
+    background-color: aquamarine;
+}
+
+
+
+#right-container {
+    border: 3px solid rgb(15, 15, 15);
+    border-radius: 5px;
+    width: auto;
+    height: auto;
+}
+
+#loginForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+
+#loginForm button{
+    background-color: cadetblue;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#loginForm button a{
+    text-decoration: none;
+    color: white;
+}
+#loginForm button:hover{
+    background-color: rgb(68, 157, 235);
+    color: black;
+}
+
+footer{
+    background-color: cadetblue;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
 
 /* Responsive Design */

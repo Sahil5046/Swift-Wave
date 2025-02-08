@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Poppins:wght@200&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="./assets/css/login.css">
+    <link rel="stylesheet" href="./assets/css/login.css">
 </head>
 
 <body>
@@ -27,21 +27,29 @@
             </div>
         </nav>
     </header>
-    
+
 
     <main>
-        <form id="loginForm">
-            <h2>Login</h2>
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
-            <br><br>
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-            <br><br>
-            <button type="submit" class="btn"><a href="./index.html">Login</a></button>
+        <div id="container">
+            <!-- <div id="left-container">
+                <img src="https://t4.ftcdn.net/jpg/01/19/11/55/360_F_119115529_mEnw3lGpLdlDkfLgRcVSbFRuVl6sMDty.jpg"
+                    alt="">
+            </div> -->
+            <div id="right-container">
+                <form id="loginForm">
+                    <h2>Login</h2>
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                    <!-- <br><br> -->
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    <!-- <br><br> -->
+                    <button type="submit" class="btn"><a href="./index.html">Login</a></button>
 
-            <p>Don't have Account then, <a href="./signup.html" class="btn">Sign Up</a></p>
-        </form>
+                    <p>Don't have Account then, <a href="./signup.html" class="btn">Sign Up</a></p>
+                </form>
+            </div>
+        </div>
     </main>
 
     <footer>
