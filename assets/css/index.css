@@ -57,6 +57,98 @@ nav {
     color: yellow;
 }
 
+/* Hero Section */
+
+.hero {
+    background-image: url('https://jugnoo.io/wp-content/uploads/2022/02/rectangle.png');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+/* .overlay {
+    position: absolute;
+    inset: 0;
+} */
+
+.hero h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px black;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px black;
+}
+
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: 500px;
+}
+
+.btn-yellow {
+    background-color: yellow;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn-yellow a{
+    text-decoration: none;
+}
+
+.btn-yellow:hover {
+    background-color: white;
+    color: rgb(32, 207, 46);
+}
+
+
+
+/* Features Section */
+.feature {
+    /* background-color: #f2f2f2; */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.feature h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    /* align-items: ; */
+    text-align: center;
+}
+
+.feature-container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.feature-card {
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 300px;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     nav {
