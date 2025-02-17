@@ -1,0 +1,255 @@
+.poppins-extralight {
+    font-family: "Poppins", serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+/* Keeping your original nav styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: linear-gradient(135deg, #1B223A 0%, #2D3655 100%);
+    color: white;
+}
+
+.logo {
+    height: 40px;
+}
+
+.navitems ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.navitems a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navitems a:hover {
+    color: #FFD700;
+}
+
+/* Main content styles */
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+    animation: fadeIn 0.8s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.profile-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+}
+
+.profile-card {
+    background: white;
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    animation: slideInLeft 0.8s ease-out;
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto 1.5rem;
+    border: 5px solid #4F46E5;
+    position: relative;
+    overflow: hidden;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(79, 70, 229, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(79, 70, 229, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(79, 70, 229, 0);
+    }
+}
+
+.profile-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-picture:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.profile-info {
+    text-align: center;
+}
+
+.profile-info h2 {
+    color: #1B223A;
+    margin-bottom: 1rem;
+}
+
+.info-item {
+    margin: 1rem 0;
+    padding: 0.5rem;
+    border-radius: 10px;
+    background: #f8fafc;
+    transition: all 0.3s ease;
+}
+
+.info-item:hover {
+    background: #f1f5f9;
+    transform: translateY(-2px);
+}
+
+.info-label {
+    color: #64748b;
+    font-size: 0.9rem;
+}
+
+.info-value {
+    color: #1B223A;
+    font-weight: 500;
+    margin-top: 0.25rem;
+}
+
+.ride-history {
+    background: white;
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    animation: slideInRight 0.8s ease-out;
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.ride-card {
+    background: #f8fafc;
+    border-radius: 15px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    gap: 1rem;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.ride-card:hover {
+    transform: translateX(10px);
+    background: #f1f5f9;
+}
+
+.ride-details h4 {
+    color: #1B223A;
+    margin-bottom: 0.5rem;
+}
+
+.ride-date {
+    color: #64748b;
+    font-size: 0.9rem;
+}
+
+.ride-status {
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.status-completed {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.status-cancelled {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+.edit-profile-btn {
+    background: #4F46E5;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+}
+
+.edit-profile-btn:hover {
+    background: #4338ca;
+    transform: translateY(-2px);
+}
+
+footer {
+    background: #1B223A;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .profile-container {
+        grid-template-columns: 1fr;
+    }
+
+    .ride-card {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}

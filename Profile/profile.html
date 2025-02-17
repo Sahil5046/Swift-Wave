@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/profile.css">
+    <title>User Profile - Swift Wave</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="../assets/images/logo.png" alt="Logo" class="logo">
+            <h1>Swift Wave</h1>
+            <div class="navitems">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../rider/rider-dashboard.html">Ride</a></li>
+                    <li><a href="../driver/driver-dashboard.html">Driver</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="profile-container">
+            <div class="profile-card">
+                <div class="profile-picture">
+                    <img src="/api/placeholder/150/150" alt="Profile Picture">
+                </div>
+                <div class="profile-info">
+                    <h2>John Doe</h2>
+                    <div class="info-item">
+                        <div class="info-label">Email</div>
+                        <div class="info-value">john.doe@example.com</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">Mobile Number</div>
+                        <div class="info-value">+1 (555) 123-4567</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">Member Since</div>
+                        <div class="info-value">January 2024</div>
+                    </div>
+                    <button class="edit-profile-btn">Edit Profile</button>
+                </div>
+            </div>
+
+            <div class="ride-history">
+                <h2>Ride History</h2>
+                <div class="ride-card">
+                    <div class="ride-details">
+                        <h4>Downtown → Airport</h4>
+                        <div class="ride-date">Feb 15, 2025</div>
+                    </div>
+                    <div class="ride-price">$35.00</div>
+                    <div class="ride-status status-completed">Completed</div>
+                </div>
+
+                <div class="ride-card">
+                    <div class="ride-details">
+                        <h4>Mall → Home</h4>
+                        <div class="ride-date">Feb 12, 2025</div>
+                    </div>
+                    <div class="ride-price">$22.50</div>
+                    <div class="ride-status status-completed">Completed</div>
+                </div>
+
+                <div class="ride-card">
+                    <div class="ride-details">
+                        <h4>Office → Restaurant</h4>
+                        <div class="ride-date">Feb 10, 2025</div>
+                    </div>
+                    <div class="ride-price">$18.75</div>
+                    <div class="ride-status status-cancelled">Cancelled</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Swift Wave Service. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
