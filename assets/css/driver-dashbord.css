@@ -1,0 +1,145 @@
+.poppins-extralight {
+    font-family: "Poppins", serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #1B223A 0%, #2D3655 100%);
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: background 0.3s ease;
+}
+
+nav h1 {
+    color: #fff;
+    margin-left: 20px;
+}
+
+#navitems {
+    display: flex;
+    align-items: center;
+}
+
+#navitems ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+#navitems ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 5px 0;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+#navitems ul li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    transition: width 0.3s ease;
+    background-color: yellow;
+}
+
+#navitems ul li a:hover {
+    color: yellow;
+}
+
+#navitems ul li a:hover::after {
+    width: 100%;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #000000;
+    color: white;
+}
+.hero-text h2 {
+    font-size: 2rem;
+}
+.hero-text button {
+    padding: 10px 20px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+
+.hero-text button a{
+    text-decoration: none;
+    color: black;
+}
+
+.hero-text button:hover {
+    background-color: rgb(218, 248, 146);
+    color: rgb(255, 255, 255);
+}
+
+.info-section {
+    padding: 50px;
+    background-color: #eee;
+}
+.info-text h3 {
+    font-size: 1.5rem;
+}
+
+.info-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+.info-image img{
+    height: auto;
+    width: 1000px;
+}
+
+.info-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.info-list .info h3{
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    color: white;
+}
